@@ -1,0 +1,419 @@
+/* Reset global */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Body */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #f5f5f5;
+  overflow-x: hidden; /* Evita desplazamiento lateral en móvil */
+}
+
+/* Header general */
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: #1e1e1e;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  text-align: center;
+}
+
+/* Texto en el header */
+header p {
+  font-family: 'Great Vibes', cursive;
+  font-size: 1.5em;
+  text-align: center;
+  padding: 0.1em 0;
+}
+
+/* Nav */
+header nav {
+  background-color: #1e1e1e;
+  padding: 0.1em;
+}
+
+/* Imagen del header (como logo) */
+header img {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Sección principal */
+main p {
+  margin: 1em;
+  text-align: center;
+  font-family: 'Great Vibes', cursive;
+  font-size: 2em;
+}
+
+main h4,
+main h5 {
+  font-size: xx-large;
+  text-align: center;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.ubicacion{
+
+}
+/* Footer */
+footer {
+  background-color: #1e1e1e;
+  text-align: center;
+  padding: 0.1em 0;
+}
+
+/* Galería de tatuajes */
+.tatuajes {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 2em;
+}
+
+.tatuaje {
+  background-color: #2c2c2c;
+  border-radius: 10px;
+  padding: 1em;
+  width: 400px;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.tatuaje img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Menú */
+.menu {
+   font-size: 2em;
+  list-style: none;
+  padding: 0;
+  margin-top: 1em;
+
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+
+  text-align: center;
+}
+
+.menu li a {
+  color: hsl(0, 0%, 57%);
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.menu li a:hover {
+  color: #ffffff;
+  border-bottom: 2px solid #f8fafa;
+}
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: center;  /* 👈 CENTRA horizontalmente el <ul> */
+}
+/* Imagen principal (hero) */
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding-bottom: 60px;
+
+}
+.borderLine{
+  border-top: 3px solid #f0b358;
+}
+section.hero {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;      /* Evita que se desborde horizontalmente */
+  padding: 1em 0;
+}
+.hero-img {
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Íconos y barra social */
+.barraSocial {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 0.5em 1em;
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.icono-red,
+.icono-blue {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.icono-red {
+  width: 50px;
+  height: 50px;
+}
+
+.icono-blue {
+  width: 40px;
+  height: 40px;
+}
+
+/* Responsive para móvil */
+@media screen and (max-width: 600px) {
+  .icono-red,
+  .icono-blue {
+    width: 32px;
+    height: 32px;
+  }
+
+  .barraSocial {
+    padding: 0.5em 0;
+    gap: 8px;
+  }
+
+  .hero-img {
+    width: 95vw;
+    height: auto;
+  }
+}
+
+#citas {
+    max-width: 600px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background-color: #1a1a1a;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+    color: #fff;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    border: 1px solid #333;
+}
+
+#citas h2 {
+    text-align: center;
+    color: #ffffff; /* Naranja tatuaje */
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 700;
+}
+
+#citas form {
+    display: flex;
+    flex-direction: column;
+}
+
+#citas label {
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+    color: #ddd;
+}
+
+#citas input,
+#citas textarea,
+#citas select {
+    padding: 12px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+#citas input:focus,
+#citas textarea:focus {
+    border-color: #ffffff;
+    outline: none;
+    box-shadow: 0 0 0 2px rgba(238, 189, 164, 0.3);
+}
+
+#citas textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#citas input[type="submit"] {
+    background-color: #f0b358;
+    color: white;
+    border: none;
+    padding: 14px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s;
+}
+
+#citas input[type="submit"]:hover {
+    background-color: #504c4c;
+}
+
+/* Estilo para el selector de fecha */
+input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(1);
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    #citas {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+    
+    #citas h2 {
+        font-size: 1.5rem;
+    }
+}
+/* Estilos para selects */
+#citas select {
+    padding: 12px;
+    margin-bottom: 1.5rem;
+    border: 2px solid #333;
+    border-radius: 4px;
+    background-color: #2a2a2a;
+    color: #fff;
+    font-size: 1rem;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='white'%3e%3cpath d='M7 10l5 5 5-5z'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 15px;
+}
+
+/* Estilos para file input */
+#citas input[type="file"] {
+    padding: 10px;
+    background-color: #2a2a2a;
+    border: 2px dashed #444;
+    margin-bottom: 1.5rem;
+}
+
+#citas input[type="file"]::file-selector-button {
+    background-color: #5e5e5e;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    margin-right: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#contacto {
+    background: #111;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    border-top: 3px solid #f0b358;
+}
+
+.contacto-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin: 2rem 0;
+}
+
+.contacto-card {
+    background: #1e1e1e;
+    padding: 1.2rem;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+
+.contacto-card:hover {
+    transform: translateY(-5px);
+}
+
+.contacto-card img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 1rem;
+}
+
+.contacto-card h3 {
+    color: #f0b358;
+    margin: 0.5rem 0;
+}
+
+.contacto-card a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    
+}
+
+.contacto-card.whatsapp {
+    border-bottom: 3px solid #25D366; /* Verde WhatsApp */
+}
+
+.badge {
+    display: inline-block;
+    background: #25D366;
+    color: white;
+    padding: 0.2rem 0.5rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+    font-family:'Arial Narrow Bold', sans-serif;
+}
+
+.info-extra {
+    margin-top: 2rem;
+    font-size: .7rem;
+}
+.info-extra p{
+    font-family:'Arial Narrow Bold', sans-serif;
+}
+.cta {
+    font-style: italic;
+    color: #f0b358;
+    margin-top: 1rem;
+    font-size: 1.2rem;
+}
+
+.numero-whatsapp {
+    font-family: 'Arial', monospace; /* Ideal para números */
+    font-size: 1.1rem;
+    color: #25D366 !important; /* Verde WhatsApp */
+    font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 6px 12px;
+    background-color: rgba(37, 211, 102, 0.1);
+    border-radius: 6px;
+    transition: all 0.3s;
+}
