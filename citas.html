@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tatto Ismael</title>
+    <!-- Fuentes tipograficas -->
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    <!-- Llamamos al Archivo de Estilos.css -->
+    <link rel="stylesheet" href="estilos.css">
+    
+</head>
+<body>
+    <header>
+        <img src="LetrasLogo.png" alt="logo">
+        <nav>
+        <ul class="menu">
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="TRealizados.html">Trabajos Realizados</a></li>
+            <li><a href="citas.html">Citas</a></li>
+            <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+    </nav>
+    </header>
+
+    <main>
+        <section class = "borderLine"></section>
+        <section id="citas">
+            <h2>Agenda tu Cita</h2>
+            <form action="https://formspree.io/f/xpwrnkgr" method="POST">
+                <label for="nombre">Nombre:</label><br>
+                <input type="text" id="nombre" name="nombre" required><br><br>
+
+                <label for="telefono">WhatsApp o Teléfono:</label><br>
+                <input type="tel" id="telefono" name="telefono" required><br><br>
+
+                <label for="mensaje">Describe tu tatuaje:</label><br>
+                <textarea id="mensaje" name="mensaje" required></textarea><br><br>
+
+                <label for="tamaño">Tamaño aproximado (cm):</label>
+                <select id="tamaño" name="tamaño" required>
+                    <option value="">Selecciona...</option>
+                    <option value="pequeño">Pequeño (hasta 10cm)</option>
+                    <option value="mediano">Mediano (10-20cm)</option>
+                    <option value="grande">Grande (20-30cm)</option>
+                    <option value="extra">Extra grande (+30cm)</option>
+                </select>
+
+                <label for="ubicacion">Ubicación en el cuerpo:</label>
+                <input type="text" id="ubicacion" name="ubicacion" placeholder="Ej. Brazo derecho, costillas..." required>
+
+                <!-- Presupuesto aproximado -->
+                <label for="presupuesto">Presupuesto estimado (opcional):</label>
+                <input type="text" id="presupuesto" name="presupuesto" placeholder="Tu rango de presupuesto">
+
+                <label for="fecha">Fecha deseada:</label><br>
+                <input type="date" id="fecha" name="fecha"><br><br>
+
+                <!-- Horario preferido -->
+                <label for="horario">Horario preferido:</label>
+                <select id="horario" name="horario">
+                    <option value="indiferente">Indiferente</option>
+                    <option value="mañana">Mañana (10am - 2pm)</option>
+                    <option value="tarde">Tarde (2pm - 6pm)</option>
+                    <option value="noche">Noche (6pm - 9pm)</option>
+                </select>
+
+<!-- Checkbox para primer tatuaje -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="primer-tatuaje" name="primer-tatuaje">
+                    <label for="primer-tatuaje">Es mi primer tatuaje</label>
+                </div>
+
+<!-- Checkbox para retoque -->
+                <div class="checkbox-group">
+                    <input type="checkbox" id="retoque" name="retoque">
+                    <label for="retoque">Es un retoque/corrección</label>
+                </div>
+
+                <div class="privacidad">
+                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <label for="privacidad">Acepto la política de privacidad y confirmo que soy mayor de edad</label>
+                </div>
+                <input type="submit" value="Enviar Cita">
+            </form>
+        </section>
+    </main>
+
+
+    <footer>
+        <p>© EC Corp 2025</p>
+    </footer>
+</body>
+</html>
